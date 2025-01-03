@@ -32,14 +32,20 @@ ON
 # Question 7
 
 ```python
-def calculate_water_left(initial_volume):
-    for _ in range(7):
-        initial_volume -= initial_volume / 3
-    return initial_volume
+def calculate(x):
+  days = 7
+  remaining_water = x
 
-# Example usage
-remaining_water = calculate_water_left(5832)
-print(f"น้ำที่เหลือในถัง: {remaining_water:.2f} ลิตร")
+  for _ in range(days):
+    used_water = remaining_water / 3
+    remaining_water -= used_water
+
+  return remaining_water
+
+initial_water = 5832
+
+result = calculate(initial_water)
+print("ปริมาณน้ำที่เหลือในถังหลังจาก 7 วัน:", result, "ลิตร")
 
 ```
 
@@ -62,7 +68,7 @@ for i in range(rows, 0, -1):
 
 # Question 11
 
-## 888 + 88 + 8 + 8 + 8
+### 888 + 88 + 8 + 8 + 8
 
 
 # Question 12
