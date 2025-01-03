@@ -1,6 +1,6 @@
 # Question 4
 
-```
+```mysql
 SELECT * 
 FROM Customer 
 WHERE Used > 500000;
@@ -10,7 +10,7 @@ WHERE Used > 500000;
 
 # Question 5
 
-```
+```mysql
 SELECT 
     Customer.ID AS CustomerID, 
     Customer.Name, 
